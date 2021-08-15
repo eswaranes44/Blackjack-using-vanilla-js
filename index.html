@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onchange="renderGame()">
+    <h1>Blackjack</h1>
+    <p id="message-el">Want to play a round?</p>
+    <div id="card-img">
+      <img src="./images/card_face_down.png" />
+    </div>
+    <!-- <p>Cards: <span id="card-el"></span></p> -->
+    <p>Cards: <span id="card1-el"></span></p>
+    <p>Sum: <span id="sum-el"></span></p>
+    <button onclick="startGame()">START GAME</button>
+    <button onclick="newCard()">NEW CARD</button>
+    <p id="player-el"></p>
+    <script src="app.js"></script>
+  </body>
+</html>
